@@ -28,7 +28,7 @@
 
 .top-nav ul li div:hover {
     background-color: aquamarine;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .theme-header {
@@ -62,4 +62,74 @@
 .theme-header ul li div:hover {
     cursor: pointer;
     background-color: aqua;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 130px;
+    height: 600px;
+    border-radius: 10px 0 0 10px;
+    background-color: tomato;
+    position: fixed;
+    right: 0;
+    top: 200px;
+}
+
+.sidebar ul {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.row-content {
+    width: 100%;
+    height: auto;
+    padding: 25px 0 25px 0;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row-content section:first-of-type {
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.row-content-alternate section:first-of-type {
+    border-radius: 10px;
+}
+
+.row-content-alternate section:last-of-type {
+    margin-right: 50px;
+}
+
+.row-content section:last-of-type, .row-content-alternate section:last-of-type{
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+}
+
+.row-content-alternate {
+    width: 100%;
+    height: auto;
+    padding: 25px 0 25px 0;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
