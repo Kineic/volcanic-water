@@ -9,11 +9,15 @@ body {
 .top-nav {
     width: 100%;
     height: 70px;
-    background-color: #dedede;
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
+    position: fixed;
+    z-index: 1;
+    color: #786d01;
+    border-bottom: 1px solid #786d01;
 }
 
 .top-nav ul {
@@ -35,18 +39,25 @@ body {
 }
 
 .top-nav ul li div:hover {
-    background-color: aquamarine;
+    color: #bcaa01;
     cursor: pointer;
 }
 
+#header-logo {
+    margin-left: 340px
+}
+
 .theme-header {
+    padding-top:70px;
     width: 100%;
     height: 50px;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: #e1e1e1;
+    background-color: #262626;
+    color: #786d01;
+    border-bottom: 1px solid #786d01;
 }
 
 .theme-header ul {
@@ -69,7 +80,7 @@ body {
 
 .theme-header ul li div:hover {
     cursor: pointer;
-    background-color: aqua;
+    color: #bcaa01;
 }
 
 .sidebar {
@@ -80,10 +91,11 @@ body {
     width: 130px;
     height: 600px;
     border-radius: 10px 0 0 10px;
-    background-color: tomato;
+    background-color: #262626;
     position: fixed;
     right: 0;
     top: 150px;
+    border: 1px solid #786d01;
 }
 
 .sidebar ul {
@@ -97,11 +109,20 @@ body {
 
 }
 
+.sidebar a {
+    text-decoration: none;
+    color: #786d01;
+}
+
+.sidebar a:hover {
+    color: #bcaa01;
+}
+
 .row-content {
     width: 100%;
     height: auto;
     padding: 25px 0 25px 0;
-    background-color: orangered;
+    background-color: #2e4052;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -134,7 +155,7 @@ body {
     width: 100%;
     height: auto;
     padding: 25px 0 25px 0;
-    background-color: orangered;
+    background-color: #2e4052;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -145,6 +166,17 @@ body {
 
 footer {
     background-color: #000000;
+    width: 100%;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: #786d01;
 }
 
 .copyright {
@@ -153,6 +185,12 @@ footer {
     align-content: center;
     align-items: center;
     height: 50px;
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+.copyright img {
+    margin-left: 10px;
 }
 
 .footer-flex-container {
@@ -170,7 +208,7 @@ footer {
     display: flex;
     justify-content: center;
     height: 140px;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #786d01;
 }
 
 .footer-flex-container article ul {
@@ -187,10 +225,15 @@ footer {
 
 .footer-headings {
     text-align: center;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #786d01;
     padding-bottom: 2px;
 }
 
 footer article h3 {
     color: #ffffff;
+    font-weight: 400;
+}
+
+footer article h3 span{
+    font-weight: 700;
 }
