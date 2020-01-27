@@ -27,15 +27,19 @@
         </ul>
     </nav>
     <section class="form-container">
-        <form>
-            <label for="email">Email Address</label>
-            <input type="text" class="emailField" name="email" placeholder="Please enter your email address">
+        <div id="hideForm">
+            <form>
+                <label for="email">Email Address</label>
+                <input required type="text" class="emailField" name="email" placeholder="Please enter your email address">
 
-            <label for="subject">Subject</label>
-            <textarea type="text" class="subjectField" name="subject" placeholder="Please enter your subject here"></textarea>
-
-            <input id="contactButton" type="submit" value="Send">
-        </form>
+                <label for="subject">Subject</label>
+                <textarea type="text" class="subjectField" name="subject" placeholder="Please enter your subject here"></textarea>
+            </form>
+            <input onclick="checkUserInput()" type="submit" value="Send">
+        </div>
+        <div id="showSection">
+            <p>test</p>
+        </div>
     </section>
     <footer>
         <section class="footer-flex-container">
@@ -98,4 +102,8 @@
             <img href="assets/placeholder.jpg" width="30px" height="30px" alt="Volcanic Water Logo">
         </article>
     </footer>
-</body></html>
+</body>
+
+<script type='text/javascript' src='javascript/buttonClick.js'></script>
+
+</html>

@@ -203,6 +203,7 @@ footer article h3 {
 
 .form-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -210,7 +211,7 @@ footer article h3 {
     height: 93vh;
 }
 
-form input:last-of-type {
+section input:last-of-type {
     border: 1px solid #786d01;
     border-radius: 10px;
     background-color: #262626;
@@ -218,7 +219,7 @@ form input:last-of-type {
     color: #786d01;
 }
 
-form input:last-of-type:hover {
+section input:last-of-type:hover {
     cursor: pointer;
 }
 
@@ -240,4 +241,8 @@ textarea {
     resize: vertical;
     background-color: #262626;
     color: #ffffff;
+}
+
+#showSection{
+    display: none;
 }
