@@ -1,22 +1,41 @@
-var sidebarList = document.getElementsByClassName("sidebar");
+var sideBar = document.getElementsByClassName("sidebar")[0];
+
+sideBar.style.height = "80px";
+
+var count = 0;
+
+sideBar.addEventListener("click", showSidebar);
 
 var toggleSideList = document.getElementsByClassName("toggleSide");
 
-hide(toggleSideList); /*Goal is to hide the Anchor tags in the sidebar with a loop*/
-
-var sideBar = sidebarList[0];
-
-sideBar.style.height = "100px";
-
-sidebar.addEventListener("click", showSidebar);
+hide(toggleSideList);
 
 function showSidebar() {
-    sideBar.style.height = "600px";
+    if (count === 0) {
+        $(".sidebar").removeClass("vertAnimationReverse");
+        $(".sidebar").addClass("vertAnimation");
+        setTimeout(() => { show(toggleSideList); }, 1000);
+        sideBar.style.height = "600px";
+        count = count += 1;
+    } else {
+        hide(toggleSideList);
+        $(".sidebar").removeClass("vertAnimation");
+        $(".sidebar").addClass("vertAnimationReverse");
+        sideBar.style.height = "80px";
+        count = count - +1;
+    }
 }
 
 function hide(className) {
-    for(var i = 0; i < 0; i++){
+    for (var i = 0; i < className.length; i++) {
         var list = className[i];
         list.style.display = "none";
+    }
+}
+
+function show(className) {
+    for (var i = 0; i < className.length; i++) {
+        var list = className[i];
+        list.style.display = "flex";
     }
 }
