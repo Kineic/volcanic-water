@@ -1,0 +1,3 @@
+Double clicking sidebar runs the animation but also loads the
+display text after the hide function has been run. (possible solution -
+use condition to wait until animation is finsihed before running code)

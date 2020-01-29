@@ -14,15 +14,21 @@ function showSidebar() {
     if (count === 0) {
         $(".sidebar").removeClass("vertAnimationReverse");
         $(".sidebar").addClass("vertAnimation");
-        setTimeout(() => { show(toggleSideList); }, 1000);
         sideBar.style.height = "600px";
-        count = count += 1;
+        var animate = document.getElementsByClassName("vertAnimation")[0];
+        animate.addEventListener("animationend", function () {
+            if (sideBar.clientHeight > 599) {
+                show(toggleSideList);
+            }
+        })
+
+        count = 1;
     } else {
         hide(toggleSideList);
         $(".sidebar").removeClass("vertAnimation");
         $(".sidebar").addClass("vertAnimationReverse");
         sideBar.style.height = "80px";
-        count = count - +1;
+        count = 0;
     }
 }
 
