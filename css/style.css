@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap');
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Merriweather', serif;
     font-size: 14px;
@@ -183,7 +187,13 @@ body {
 footer {
     width: 100%;
     background-color: #000000;
+}
+
+.footerJava {
     width: 100%;
+    background-color: #000000;
+    position: fixed;
+    bottom:0;
 }
 
 footer a {
@@ -398,4 +408,11 @@ textarea {
     100% {
         opacity: 1;
     }
+}
+
+.javaPageRow {
+    padding-top:100px;
+    width: 100%;
+    background-color:darkcyan;
+    height: 30%;
 }
