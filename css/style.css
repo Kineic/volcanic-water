@@ -42,7 +42,7 @@ body {
     text-decoration: none;
 }
 
-.top-nav ul li div {
+.top-nav ul li a div {
     color: #786d01;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@ body {
     width: 100px;
 }
 
-.top-nav ul li div:hover {
+.top-nav ul li a div:hover {
     color: #bcaa01;
     cursor: pointer;
 }
